@@ -1,3 +1,5 @@
+import llds.snake_ladder.SnakeLadderGame;
+
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -23,15 +25,18 @@ public class Main {
 //            Thread.sleep(5000);
 //        }
 
-        Router router = new Router();
-        router.addRoute("/", Router::homeHandler);
-        router.addRoute("/user/*", Router::userHandler);
+//        Router router = new Router();
+//        router.addRoute("/", Router::homeHandler);
+//        router.addRoute("/user/*", Router::userHandler);
+//
+//        String s = router.route("/");
+//        System.out.println(s);
+//
+//        s = router.route("/user/123/himanshu");
+//        System.out.println(s);
 
-        String s = router.route("/");
-        System.out.println(s);
-
-        s = router.route("/user/123/himanshu");
-        System.out.println(s);
+//        Snake  ladder game
+        SnakeLadderGame.startGame();
 
     }
 }
