@@ -1,3 +1,5 @@
+import llds.pub_sub_queue.PubSubQueue;
+import llds.pub_sub_queue.entities.PubSubQueueSystem;
 import llds.snake_ladder.SnakeLadderGame;
 
 import java.util.List;
@@ -36,7 +38,10 @@ public class Main {
 //        System.out.println(s);
 
 //        Snake  ladder game
-        SnakeLadderGame.startGame();
+//        SnakeLadderGame.startGame();
+
+//        pubSub queue using poll mechanism
+        PubSubQueue.start();
 
     }
 }
